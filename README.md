@@ -41,7 +41,7 @@ Output
 ------
 `OS_plot_1c.m`
 
-![alt text](https://github.com/xj-xu/wu-lab-rho-mmo-paper/0analysis/Rho-demo-data.xlsx_1_plot_1c.png?raw=true)
+![Rho-demo-data xlsx_1_plot_1c](https://user-images.githubusercontent.com/33842377/221678781-df1fdfcc-b94c-4e8e-b5be-a418db28a842.png)
 
 > plots the time series in one color
 
