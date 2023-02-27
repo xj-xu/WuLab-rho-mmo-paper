@@ -41,6 +41,8 @@ Output
 ------
 `OS_plot_1c.m`
 
+![alt text](https://github.com/xj-xu/wu-lab-rho-mmo-paper/0analysis/Rho-demo-data.xlsx_1_plot_1c.png?raw=true)
+
 > plots the time series in one color
 
 
@@ -49,6 +51,6 @@ More information
 ================
 * For more information about how each function is implemented, please refer to the source code docstrings in  `/src` . 
 * Contact [XJ](xj.xu@yale.edu ) if issues with this version of the repository arise.
-> All rights and permissions belong to
-> [Wu Lab, Yale University](https://medicine.yale.edu/lab/wu/)
+> All rights and permissions belong to <br/>
+> [Wu Lab, Yale University](https://medicine.yale.edu/lab/wu/) <br/>
 > February 26, 2023
