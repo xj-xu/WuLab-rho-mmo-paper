@@ -1,6 +1,6 @@
 # wu-lab-rho-mmo-paper
 
-[![DOI](https://zenodo.org/badge/doi/TC2023paperlink.svg)](http://dx.doi.org/)
+[![DOI](https://zenodo.org/badge/doi/Tong2023paperlink.svg)](http://dx.doi.org/)
 **`wu-lab-rho-mmo-paper` is an open-source repository for a collection of MATLAB(R) scripts used for analysis in: Tong et al. (2023) Periodicity, mixed-mode oscillations, and multiple timescales in a phosphoinositide-Rho GTPase network. For further details on the methods of analysis, please refer to the methods section in the manuscript that can be found in the DOI link above.**
 
 Installation
@@ -23,10 +23,10 @@ Usage
 =====
 Input
 ------
-`wu-lab-rho-mmo-paper` takes in a pre-processed data in the form of a .xlsx spreadsheet. An example dataset `Rho-demo-data.xlsx` is included for demonstration. Briefly, to obtain such a dataset, an image stack is acquired during total internal fluorescence (TIRF) time-lapse imaging of active GTP-bound RhoA pulses as observed via the fluorescently tagged rGBD sensor. A region of interest (ROI) is chosen on the cell - typically a 3x3 $\mu$M square - for quantification of the average ROI fluorescence intensity as a function of time. The example spreadsheet has 4 sheets to store the necessary information.
+`wu-lab-rho-mmo-paper` takes in a pre-processed data in the form of a .xlsx spreadsheet. An example dataset `Rho-demo-data.xlsx` is included for demonstration. Briefly, to obtain such a dataset, an image stack is acquired during total internal fluorescence (TIRF) time-lapse imaging of active GTP-bound RhoA pulses as observed via the fluorescently tagged rGBD sensor. A region of interest (ROI) is chosen on the cell - typically a 3x3 &mu;M square - for quantification of the average ROI fluorescence intensity as a function of time. The example spreadsheet has 4 sheets to store the necessary information and each column in the respective sheets correspond to a given ROI (or cell).
 | time series | time interval | perturbation | meta |
 |--|--| --| --|
-| Data points of fluorescence intensity averaged over the pixels contained in the ROI | Image acquisition interval in seconds, e.g. one frame acquired every 4 seconds. | Time point for addition of pharmacological perturbations, such as Nocodazole |  Info of date and condition of experiment, location of raw data etc  |
+| Data points of fluorescence intensity averaged over the pixels contained in the ROI | Image acquisition interval in seconds, e.g. one frame acquired every 4 seconds. | Image stack frame number for addition of pharmacological perturbations, such as Nocodazole. |  Info of date and condition of experiment, location of raw data etc  |
 
 Demonstration
 ------
@@ -39,12 +39,11 @@ toRun('Rho-demo-data.xlsx');
 
 Output
 ------
-`OS_plot_1c.m`
+`OS_plot_1c.m` &rarr; plots the raw time series in one color
+![Rho-demo-data xlsx_1_plot_1c_raw](https://user-images.githubusercontent.com/33842377/221711043-b4c2473d-0141-4f4c-9a9f-0e297de8d258.png)
 
-![Rho-demo-data xlsx_1_plot_1c](https://user-images.githubusercontent.com/33842377/221678781-df1fdfcc-b94c-4e8e-b5be-a418db28a842.png)
-
-> plots the time series in one color
-
+`OS_poincare_v4.m` &rarr; plots the peaks; period of peaks over time; and period return map.
+![Rho-demo-data xlsx_1_p2p__](https://user-images.githubusercontent.com/33842377/221711369-da72219b-0f61-4ba8-b19f-aaf07ff8330b.png)
 
 
 More information
