@@ -39,10 +39,10 @@ toRun('Rho-demo-data.xlsx');
 
 Output
 ------
-`OS_plot_1c.m` &rarr; plots the raw time series in one color
+`OS_plot_1c.m` &rarr; plots the raw time series in one color. <br/>
 ![Rho-demo-data xlsx_1_plot_1c_raw](https://user-images.githubusercontent.com/33842377/221711043-b4c2473d-0141-4f4c-9a9f-0e297de8d258.png)
 
-`OS_poincare_v4.m` &rarr; plots the peaks; period of peaks over time; and period return map.
+`OS_poincare_v4.m` &rarr; plots the peaks; period of peaks over time; and period return map. <br/>
 ![Rho-demo-data xlsx_1_p2p__](https://user-images.githubusercontent.com/33842377/221711369-da72219b-0f61-4ba8-b19f-aaf07ff8330b.png)
 
 
