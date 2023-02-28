@@ -55,15 +55,18 @@ Output
 
 $$ W(t,s) \equiv \int_{-\infty}^\infty \frac{1}{s} \psi^*\left(\frac{u-t}{s}\right) x(u) du$$
 
-where $\psi(t)$ is the analyzing function - wavelet. The generalized analytic Morse wavelet is given by the following form in frequency $\omega$ domain. <br/>
+where $\psi(t)$ is the analyzing function - wavelet; $s$ is the scale so $1/s$ effectively serve as the normalization factor in place of the typical $1/\sqrt{s}$ seen in Fourier transforms. The analytic Morse wavelet is utilized and is given by the following generalized form in frequency $\omega$ domain. <br/>
 
 $$ \Psi_{\beta,\gamma}(\omega) = U(\omega) a_{\beta,\gamma} \omega^\beta e^{-\omega^\gamma} $$
 
-where $U$ is the Heaviside step function; $a$ is a normalization constant; while $\gamma$ are the 'decay' and symmetry parameters respectively. The sampling frequency is set by the experimental image acquisition interval. The power spectrum of oscillation period is plotted alongside the same oscillation trace. <br/>
+where $U$ is the Heaviside step function; $a$ is a normalization constant; while $\beta$ and $\gamma$ are the 'decay' and symmetry parameters respectively. The sampling frequency is set by the experimental image acquisition interval. The power spectrum of oscillation period is plotted alongside the same oscillation trace. <br/>
 ![Rho-demo-data xlsx_1_wavelet](https://user-images.githubusercontent.com/33842377/221984199-98a97417-a08f-4d71-aba6-a60478e30f03.png)
 
 `OS_Xcorr_v3.m` &rarr; computes the cross-correlation of two input signals. In the demo case, as a single input is given, the auto-correlation is effectively computed to show the presence of periodicity and its duration. <br/>
 ![Rho-demo-data xlsx_1_Xcorr_](https://user-images.githubusercontent.com/33842377/222005955-05a211a5-f672-4643-b131-aa3f05222176.png)
+
+`OS_fft.m` &rarr; fast Fourier transform <br/>
+![Rho-demo-data xlsx_1_fft](https://user-images.githubusercontent.com/33842377/222009245-422d61e4-1a4c-4f34-ac94-d54f5d27a899.png)
 
 
 More information
