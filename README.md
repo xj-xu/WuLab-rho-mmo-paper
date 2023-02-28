@@ -1,7 +1,10 @@
 # wu-lab-rho-mmo-paper
 
 [![DOI](https://zenodo.org/badge/doi/Tong2023paperlink.svg)](http://dx.doi.org/) <br/>
-**`wu-lab-rho-mmo-paper` is an open-source repository for a collection of MATLAB(R) scripts used for analysis in: Tong et al. (2023) Periodicity, mixed-mode oscillations, and multiple timescales in a phosphoinositide-Rho GTPase network. For further details on the methods of analysis, please refer to the methods section in the manuscript that can be found in the DOI link above.**
+**`wu-lab-rho-mmo-paper` is an open-source repository for a collection of MATLAB(R) scripts used for analysis in: Tong et al. (2023) Periodicity, mixed-mode oscillations, and multiple timescales in a phosphoinositide-Rho GTPase network. For further details on the methods of analysis, please refer to the methods section in the manuscript that can be found in the DOI link above.** <br/>
+
+Written by [XJ Xu](https://github.com/xj-xu).<br/>
+Last updated February 28, 2023.
 
 Installation
 ============
@@ -42,14 +45,24 @@ Output
 `OS_plot_1c.m` &rarr; plots the raw time series in one color. <br/>
 ![Rho-demo-data xlsx_1_plot_1c_raw](https://user-images.githubusercontent.com/33842377/221711043-b4c2473d-0141-4f4c-9a9f-0e297de8d258.png)
 
-`OS_poincare_v4.m` &rarr; plots the peaks; period of peaks over time; and period return map. <br/>
+`OS_plot_1c_3d.m` &rarr; traces the peak amplitutde $I, I+n, I+2n$. <br/>
+![Rho-demo-data xlsx_1_1c_3d](https://user-images.githubusercontent.com/33842377/221984463-7c972a18-40a1-4081-91cf-f1d7cbf4d496.png)
+
+`OS_poincare_v4.m` &rarr; plots the peaks; period return map; and period of peaks over time, which is useful for identifying period doubling events. <br/>
 ![Rho-demo-data xlsx_1_p2p__](https://user-images.githubusercontent.com/33842377/221711369-da72219b-0f61-4ba8-b19f-aaf07ff8330b.png)
+
+`OS_wavelet_v3_yPeriod.m` &rarr; performs a 1-D continuous wavlet transform on the oscillatory Rho signal $x(t)$ <br/>
+$$ W(t,s) \equiv \int_{-\infty}^\infty \frac{1}{s} \psi^*\left(\frac{u-t}{s}\right) x(u) du$$
+where $\psi(t)$ is the analyzing function - wavelet. The generalized analytic Morse wavelet is given by the following form in frequency $\omega$ domain. <br/>
+$$ \Psi_{\beta,\gamma}(\omega) = U(\omega) a_{\beta,\gamma} \omega^\beta e^{-\omega^\gamma} $$
+where $U$ is the Heaviside step function; $a$ is a normalization constant; while $\gamma$ are the 'decay' and symmetry parameters respectively. The sampling frequency is set by the experimental image acquisition interval. The power spectrum of oscillation period is plotted alongside the same oscillation trace. <br/>
+![Rho-demo-data xlsx_1_wavelet](https://user-images.githubusercontent.com/33842377/221984199-98a97417-a08f-4d71-aba6-a60478e30f03.png)
 
 
 More information
 ================
 * For more information about how each function is implemented, please refer to the source code docstrings in  `/src` . 
-* Contact [XJ](xj.xu@yale.edu ) if issues with this version of the repository arise.
+* Contact [XJ](xj.xu@yale.edu) if issues with this version of the repository arise.
 > All rights and permissions belong to <br/>
 > [Wu Lab, Yale University](https://medicine.yale.edu/lab/wu/) <br/>
 > February 26, 2023
