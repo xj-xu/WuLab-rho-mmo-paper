@@ -52,11 +52,18 @@ Output
 ![Rho-demo-data xlsx_1_p2p__](https://user-images.githubusercontent.com/33842377/221711369-da72219b-0f61-4ba8-b19f-aaf07ff8330b.png)
 
 `OS_wavelet_v3_yPeriod.m` &rarr; performs a 1-D continuous wavlet transform on the oscillatory Rho signal $x(t)$ <br/>
+
 $$ W(t,s) \equiv \int_{-\infty}^\infty \frac{1}{s} \psi^*\left(\frac{u-t}{s}\right) x(u) du$$
+
 where $\psi(t)$ is the analyzing function - wavelet. The generalized analytic Morse wavelet is given by the following form in frequency $\omega$ domain. <br/>
+
 $$ \Psi_{\beta,\gamma}(\omega) = U(\omega) a_{\beta,\gamma} \omega^\beta e^{-\omega^\gamma} $$
+
 where $U$ is the Heaviside step function; $a$ is a normalization constant; while $\gamma$ are the 'decay' and symmetry parameters respectively. The sampling frequency is set by the experimental image acquisition interval. The power spectrum of oscillation period is plotted alongside the same oscillation trace. <br/>
 ![Rho-demo-data xlsx_1_wavelet](https://user-images.githubusercontent.com/33842377/221984199-98a97417-a08f-4d71-aba6-a60478e30f03.png)
+
+`OS_Xcorr_v3.m` &rarr; computes the cross-correlation of two input signals. In the demo case, as a single input is given, the auto-correlation is effectively computed to show the presence of periodicity and its duration. <br/>
+![Rho-demo-data xlsx_1_Xcorr_](https://user-images.githubusercontent.com/33842377/222005955-05a211a5-f672-4643-b131-aa3f05222176.png)
 
 
 More information
