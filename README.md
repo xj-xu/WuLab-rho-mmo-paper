@@ -42,6 +42,13 @@ toRun('Rho-demo-data.xlsx');
 
 Output
 ------
+Outputs are stored in three directories: 
+- `/0analysis`
+- `/0histogram`
+- `/0stat`
+
+Figures saved in the first directory are briefly outline below, while the other two contain basic statistical information for reference. <br/>
+
 `OS_plot_1c.m` &rarr; plots the raw time series in one color. <br/>
 ![Rho-demo-data xlsx_1_plot_1c_raw](https://user-images.githubusercontent.com/33842377/221711043-b4c2473d-0141-4f4c-9a9f-0e297de8d258.png)
 
@@ -65,8 +72,11 @@ where $U$ is the Heaviside step function; $a$ is a normalization constant; while
 `OS_Xcorr_v3.m` &rarr; computes the cross-correlation of two input signals. In the demo case, as a single input is given, the auto-correlation is effectively computed to show the presence of periodicity and its duration. <br/>
 ![Rho-demo-data xlsx_1_Xcorr_](https://user-images.githubusercontent.com/33842377/222005955-05a211a5-f672-4643-b131-aa3f05222176.png)
 
-`OS_fft.m` &rarr; fast Fourier transform <br/>
-![Rho-demo-data xlsx_1_fft](https://user-images.githubusercontent.com/33842377/222009245-422d61e4-1a4c-4f34-ac94-d54f5d27a899.png)
+`OS_fft.m` &rarr; discrete Fast Fourier transform <br/>
+![Rho-demo-data xlsx_1_fft](https://user-images.githubusercontent.com/33842377/222254493-d0df7513-fb81-4035-9af7-d7e5377506a5.png)
+
+`OS_alignpeaks_2c.m` &rarr; align the peaks and show standard deviations as a shaded region. <br/>
+![Rho-demo-data xlsx_1_ap_d_0 3](https://user-images.githubusercontent.com/33842377/222254572-fe75c5f9-9d76-491d-b0a2-b351c197cd0d.png)
 
 
 More information
