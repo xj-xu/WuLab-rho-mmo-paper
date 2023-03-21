@@ -1,6 +1,6 @@
 # wu-lab-rho-mmo-paper
 
-[![DOI](https://zenodo.org/badge/doi/Tong2023paperlink.svg)](http://dx.doi.org/) <br/>
+[![DOI](https://zenodo.org/badge/doi/Tong2023paperlink.svg)](http://dx.doi.org/) [![Github All Releases](https://img.shields.io/github/downloads/xj-xu/wu-lab-rho-mmo-paper/total.svg)]() <br/>
 **`wu-lab-rho-mmo-paper` is an open-source repository for a collection of MATLAB(R) scripts used for analysis in: Tong et al. (2023) Periodicity, mixed-mode oscillations, and multiple timescales in a phosphoinositide-Rho GTPase network. For further details on the methods of analysis, please refer to the methods section in the manuscript that can be found in the DOI link above.** <br/>
 
 Written by [XJ Xu](https://github.com/xj-xu).<br/>
